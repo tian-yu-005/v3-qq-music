@@ -1,7 +1,7 @@
 <template>
   <div class="aside">
     <div class="logo">
-      <img :src="logo" width="30" height="30" alt="QQ音乐">
+      <img src="/src/assets/img/logo.webp" width="30" height="30" alt="QQ音乐">
       <span class="logo-title">QQ音乐</span>
     </div>
     <div style="height: calc(100vh - 60px)">
@@ -34,7 +34,6 @@
 import { computed, defineAsyncComponent, nextTick, ref } from 'vue'
 import { useRouter } from 'vue-router'
 
-import logo from '@/assets/img/logo.webp'
 import List from './List.vue'
 import ListItem from './ListItem.vue'
 import { useLoginStore } from '@/store/login/login'
