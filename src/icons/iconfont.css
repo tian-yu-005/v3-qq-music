@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3896010 */
+  src: url('iconfont.woff2?t=1677941666838') format('woff2'),
+       url('iconfont.woff?t=1677941666838') format('woff'),
+       url('iconfont.ttf?t=1677941666838') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pifu:before {
+  content: "\e62b";
+}
+
+.icon-shipin:before {
+  content: "\e656";
+}
+
+.icon-diannaobangongdianzi:before {
+  content: "\e86a";
+}
+
+.icon-fenxiang:before {
+  content: "\e626";
+}
+
+.icon-zanting:before {
+  content: "\e63d";
+}
+
+.icon-yun:before {
+  content: "\e634";
+}
+
+.icon-fuzhi:before {
+  content: "\e618";
+}
+
+.icon-shengji:before {
+  content: "\e78a";
+}
+
+.icon-up:before {
+  content: "\eb93";
+}
+
+.icon-shanchu:before {
+  content: "\e74b";
+}
+
+.icon-duoxuan:before {
+  content: "\e61c";
+}
+
+.icon-pause:before {
+  content: "\ea81";
+}
+
+.icon-play:before {
+  content: "\ea82";
+}
+
+.icon-pre:before {
+  content: "\e63c";
+}
+
+.icon-close-sound:before {
+  content: "\e8b8";
+}
+
+.icon-sound:before {
+  content: "\e8b9";
+}
+
+.icon-order:before {
+  content: "\e6af";
+}
+
+.icon-pinglun:before {
+  content: "\e62a";
+}
+
+.icon-gengduocaozuo:before {
+  content: "\e63f";
+}
+
+.icon-bofang:before {
+  content: "\e87c";
+}
+
+.icon-huanyipi:before {
+  content: "\e601";
+}
+
+.icon-next:before {
+  content: "\e63e";
+}
+
+.icon-tianjia:before {
+  content: "\e663";
+}
+
+.icon-gl-play:before {
+  content: "\ea6d";
+}
+
+.icon-xiazai:before {
+  content: "\e607";
+}
+
+.icon-tushu:before {
+  content: "\e600";
+}
+
+.icon-zuichun:before {
+  content: "\e6cd";
+}
+
+.icon-yinle1:before {
+  content: "\e79a";
+}
+
+.icon-shu:before {
+  content: "\e645";
+}
+
+.icon-shouye:before {
+  content: "\e63a";
+}
+
+.icon-dianshi:before {
+  content: "\e624";
+}
+
+.icon-aixin:before {
+  content: "\eca1";
+}
+
+.icon-youxiji:before {
+  content: "\e625";
+}
+
+.icon-yanjing:before {
+  content: "\e658";
+}
+
+.icon-tuijian:before {
+  content: "\e67d";
+}
+
+.icon-zuijinlaifang:before {
+  content: "\e6d7";
+}
+
+.icon-yinleliebiao:before {
+  content: "\e674";
+}
+
+.icon-yinle:before {
+  content: "\e667";
+}
+
+.icon-w_aixin:before {
+  content: "\e660";
+}
+
+.icon-diantai:before {
+  content: "\e605";
+}
+

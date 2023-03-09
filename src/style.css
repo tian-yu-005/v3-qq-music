@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.el-tabs__nav-wrap::after {
+  display: none;
+}
+@media screen and (max-width: 1339px) {
+  .hidden-1339-and-down {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1179px) {
+  .hidden-1179-and-down {
+    display: none !important;
+  }
+}

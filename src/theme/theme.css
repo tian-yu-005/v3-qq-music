@@ -1,0 +1,36 @@
+html {
+  --theme-color: #5cd4b4;
+  --aside-bg: rgb(245, 245, 245);
+  --right-bg: rgb(250, 250, 250);
+  --deep-bg: #ededed;
+  --font-color-shallow: gray;
+  --font-color-search: var(--theme-color);
+  --progress-bg: rgb(237, 237, 237);
+  --search-result-bg: var(--deep-bg);
+  --aside-item-hover-bg: rgb(231, 231, 231);
+  /* element-plus */
+  --el-color-primary: var(--theme-color) !important;
+  --el-color-primary-light-3: #55c0a3 !important; /* hover */
+  --el-color-primary-light-5: #4ba18a !important; /* focus */
+  --el-color-primary-dark-2: #53a590 !important; /* active */
+  --el-border-color-light: var(--progress-bg) !important; /* nav border-bottom */
+  --el-mask-color: rgb(239, 239, 239) !important; /* v-loading */
+}
+html.orange {
+  --theme-color: rgb(255, 177, 60);
+  --aside-bg: rgb(255, 218, 163);
+  --right-bg: rgb(255, 222, 173);
+  --deep-bg: #fff;
+  --font-color-shallow: #000000b1;
+  --font-color-search: rgb(255, 0, 0);
+  --progress-bg: rgb(255, 210, 143);
+  --search-result-bg: var(--theme-color);
+  --aside-item-hover-bg: rgb(254, 245, 170);
+  /* element-plus */
+  --el-color-primary: var(--theme-color) !important;
+  --el-color-primary-light-3: rgb(220, 156, 58) !important; /* hover */
+  --el-color-primary-light-5: rgb(197, 140, 53) !important; /* focus */
+  --el-color-primary-dark-2: rgb(160, 116, 50) !important; /* active */
+  --el-border-color-light: var(--progress-bg) !important; /* nav border-bottom */
+  --el-mask-color: rgb(237, 207, 160) !important; /* v-loading */
+}
