@@ -3,6 +3,7 @@ import { defineStore, storeToRefs } from 'pinia'
 import { watch } from 'vue'
 import { ElMessage } from 'element-plus'
 import { useLocalSongStore } from '@/store/localsong/localsong'
+import defaultImg from '@/assets/img/default.png'
 
 // 时间格式化
 function getTime(time: number) {
@@ -29,7 +30,7 @@ export const usePlayerStore = defineStore('playerStore', {
       // 正在播放的对象
       currentPlaySource: JSON.parse(localStorage.getItem('currentPlaySource')!) as ISong || {
         id: -1,
-        imgSrc: '@/assets/img/default.png',
+        imgSrc: defaultImg,
         name: '未知',
         songer: '未知',
         album: '',
