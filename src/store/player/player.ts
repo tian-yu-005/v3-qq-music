@@ -29,7 +29,7 @@ export const usePlayerStore = defineStore('playerStore', {
       // 正在播放的对象
       currentPlaySource: JSON.parse(localStorage.getItem('currentPlaySource')!) as ISong || {
         id: -1,
-        imgSrc: '/src/assets/img/default.png',
+        imgSrc: '@/assets/img/default.png',
         name: '未知',
         songer: '未知',
         album: '',
@@ -215,7 +215,7 @@ export const watchPlayState = () => {
     timeout
   } = storeToRefs(usePlayerStore())
   // 初始化播放源
-  audio.value.src = currentPlaySource.value.audio
+  // audio.value.src = currentPlaySource.value.audio
   // 歌曲错误时，自动切换下一首
   const toNext = () => {
     // 弹窗

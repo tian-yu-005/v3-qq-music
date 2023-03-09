@@ -52,46 +52,7 @@
 <script lang="ts" setup>
 import { ref, reactive } from 'vue'
 import filterSongerByTags from '@/hooks/useFilter'
-// 原始数据
-const songer = [
-  { imgSrc: '/src/assets/img/music-home/songer/b1.png', name: '周杰伦', tags: ['港台', '男', '流行'] },
-  { imgSrc: '/src/assets/img/music-home/songer/b2.png', name: '林俊杰', tags: ['港台', '男', '流行'] },
-  { imgSrc: '/src/assets/img/music-home/songer/b3.png', name: 'G.E.M. 邓紫棋', tags: ['港台', '女', '流行'] },
-  { imgSrc: '/src/assets/img/music-home/songer/b4.png', name: '陈奕迅', tags: ['港台', '男', '流行'] },
-  { imgSrc: '/src/assets/img/music-home/songer/b5.png', name: '薛之谦', tags: ['内地', '男', '流行'] },
-
-  { imgSrc: '/src/assets/img/music-home/songer/c8.png', name: 'SING女团', tags: ['内地', '组合', '国风'] },
-  { imgSrc: '/src/assets/img/music-home/songer/c1.png', name: '七叔（叶泽浩）', tags: ['内地', '男', '国风'] },
-  { imgSrc: '/src/assets/img/music-home/songer/c2.png', name: '邓寓君(等什么君)', tags: ['内地', '女', '国风'] },
-  { imgSrc: '/src/assets/img/music-home/songer/c3.png', name: '阿悠悠', tags: ['内地', '女', '国风'] },
-  { imgSrc: '/src/assets/img/music-home/songer/c4.png', name: '音阙诗听', tags: ['内地', '组合', '国风'] },
-  { imgSrc: '/src/assets/img/music-home/songer/c5.png', name: '司南', tags: ['内地', '女', '国风'] },
-  { imgSrc: '/src/assets/img/music-home/songer/c6.png', name: '艾辰', tags: ['内地', '男', '国风'] },
-  { imgSrc: '/src/assets/img/music-home/songer/c7.png', name: '叶炫清', tags: ['内地', '女', '国风'] },
-  
-
-  { imgSrc: '/src/assets/img/music-home/songer/a1.png', name: '队长', tags: ['内地', '男', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a2.png', name: '街道办GDC', tags: ['内地', '组合', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a3.png', name: 'Lil Ghost小鬼', tags: ['内地', '男', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a4.png', name: 'A1 TRIP', tags: ['内地', '组合', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a5.png', name: '王以太', tags: ['内地', '男', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a6.png', name: '潘玮柏', tags: ['港台', '男', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a7.png', name: '南征北战NZBZ', tags: ['内地', '组合', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a8.png', name: '考拉kora', tags: ['内地', '女', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a9.png', name: '满舒克', tags: ['内地', '男', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a10.png', name: 'NINEONE #', tags: ['内地', '女', '说唱'] },
-  
-  
-  { imgSrc: '/src/assets/img/music-home/songer/a11.png', name: 'Mad Clown (매드 클라운)', tags: ['韩国', '男', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a12.png', name: 'Epik High (에픽하이)', tags: ['韩国', '组合', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a13.png', name: 'B.I (金韩彬)', tags: ['韩国', '男', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a14.png', name: '田小娟 (전소연)', tags: ['韩国', '女', '说唱'] },
-  { imgSrc: '/src/assets/img/music-home/songer/a15.png', name: 'Janet Suhh (자넷서)', tags: ['韩国', '女', '说唱'] },
-
-  { imgSrc: '/src/assets/img/music-home/songer/d1.png', name: 'Ayasa绚沙', tags: ['日本', '女', '流行'] },
-  { imgSrc: '/src/assets/img/music-home/songer/d2.png', name: '花澤香菜 (はなざわ かな)', tags: ['日本', '女', '流行'] },
-  { imgSrc: '/src/assets/img/music-home/songer/d3.png', name: '鎖那 (さな)', tags: ['日本', '女', '流行'] }
-]
+import { songer } from '@/data/musichome'
 // 需要筛选
 const displaySonger = ref([...songer])
 // 需要遍历的所有类别

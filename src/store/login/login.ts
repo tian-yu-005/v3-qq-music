@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { info } from '@/data/user'
 import allList from '@/data/index'
+import login from '@/assets/img/login.png'
 
 import type { IResult } from '@/types/IResult'
 import type { IUser } from '@/types/IUser'
@@ -26,7 +27,7 @@ export const useLoginStore = defineStore('login', {
         id: 0,
         username: '', 
         password: '',
-        avatar: '/src/assets/img/login.png',
+        avatar: login,
         name: '点击登录',
         officialToken: '',
         fansCount: '',
@@ -222,7 +223,7 @@ export const useLoginStore = defineStore('login', {
       
       this.info.createlist.push({
         id: next_id,
-        imgSrc: '/src/assets/img/default.png',
+        imgSrc: '@/assets/img/default.png',
         playerCount: '',
         title: val,
         user: this.info.name,

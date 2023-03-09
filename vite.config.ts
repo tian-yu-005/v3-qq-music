@@ -14,6 +14,8 @@ export default defineConfig({
       useSource: true
     })
   ],
+  // base: '/v3-qq-music/',
+  base: '/v3-qq-music/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src') 

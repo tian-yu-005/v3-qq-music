@@ -1,8 +1,8 @@
-import type { ISong, ISongList } from '@/types/ISong'
 import { officialList } from './musichome'
 import { hotlist, hot_2 } from './hot'
 import { info } from './user'
 import { IUser } from '@/types/IUser'
+import type { ISong, ISongList } from '@/types/ISong'
 
 // 模拟数据库
 // 模拟数据库

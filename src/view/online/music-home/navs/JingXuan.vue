@@ -1,10 +1,10 @@
 <template>
   <!-- 图片 -->
   <Row>
-    <Col><img src="/src/assets/img/music-home/jingxuan/a1.png" alt=""></Col>
-    <Col><img src="/src/assets/img/music-home/jingxuan/a2.png" alt=""></Col>
+    <Col><img src="@/assets/img/music-home/jingxuan/a1.png" alt=""></Col>
+    <Col><img src="@/assets/img/music-home/jingxuan/a2.png" alt=""></Col>
     <Col class="hidden-1339-and-down">
-      <img src="/src/assets/img/music-home/jingxuan/a3.png" alt="">
+      <img src="@/assets/img/music-home/jingxuan/a3.png" alt="">
     </Col>
   </Row>
   <!-- 官方歌单 -->
@@ -40,16 +40,8 @@ import SongCard from '@/components/SongCard.vue'
 import Row from '@/components/Row.vue'
 import Col from '@/components/Col.vue'
 import type { ISongList } from '@/types/ISong'
-import { officialList } from '@/data/musichome'
+import { officialList, hot_diantai } from '@/data/musichome'
 
-const hot_diantai = [
-  { imgSrc: '/src/assets/img/music-home/jingxuan/c1.png', playerCount: '52.7万', title: '频率FM' },
-  { imgSrc: '/src/assets/img/music-home/jingxuan/c2.png', playerCount: '1.2万', title: '西方音乐历史漂亮指南' },
-  { imgSrc: '/src/assets/img/music-home/jingxuan/c3.png', playerCount: '434.8万', title: '重生之人渣反派自救系统丨我也想好好过日子啊！' },
-  { imgSrc: '/src/assets/img/music-home/jingxuan/c4.png', playerCount: '1734.6万', title: '活人禁忌|精品多人剧' },
-  { imgSrc: '/src/assets/img/music-home/jingxuan/c5.png', playerCount: '616.5万', title: '巴啦啦小魔仙之魔法星缘堡梦幻主题曲' },
-  { imgSrc: '/src/assets/img/music-home/jingxuan/c6.png', playerCount: '407.0万', title: '有问题，找一禅 | 解答你的情感疑惑' },
-] as ISongList[]
 
 // 第 4, 5 个需要响应式
 const hiddenClass = computed(() => {

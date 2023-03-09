@@ -44,7 +44,7 @@
           </div>
         </Title>
         <div class="tuijian">
-          <template v-for="item in hot_3">
+          <template v-for="item in tuijian">
             <SongPanel :data="item"/>
           </template>
         </div>
@@ -60,7 +60,8 @@ import SongCard from '@/components/SongCard.vue'
 import SongPanel from '@/components/SongPanel.vue'
 import { computed } from 'vue'
 import { useLoginStore } from '@/store/login/login'
-import { hotlist, hot_2, hot_3 } from '@/data/hot'
+import { hotlist, hot_2 } from '@/data/hot'
+import { tuijian } from '@/data/musichome'
 
 
 const loginStore = useLoginStore()
