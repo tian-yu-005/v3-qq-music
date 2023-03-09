@@ -1,4 +1,4 @@
-import type { ISong, ISongList } from '@/types/ISong'
+import type { ISong, ISongList } from '@/types/ISong' 
 // 推荐 201
 const hotlist = [
   {
