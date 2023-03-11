@@ -63,7 +63,6 @@ import { useLoginStore } from '@/store/login/login'
 import { hotlist, hot_2 } from '@/data/hot'
 import { tuijian } from '@/data/musichome'
 
-
 const loginStore = useLoginStore()
 const subtitle = computed(() => {
   if(loginStore.info.name === '点击登录') return '今日为你推荐'

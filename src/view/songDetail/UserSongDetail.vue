@@ -23,7 +23,6 @@
       <el-tab-pane label="评论" name="second"><i>暂无评论</i></el-tab-pane>
     </el-tabs>
   </Scroll>
-
   <div class="scroll-main" v-else v-loading="isLoad" />
 </template>
 
@@ -66,14 +65,7 @@ const songbtn = [
   { icon: 'icon-duoxuan',  text: '批量操作', type: 'operate' },
   { icon: 'icon-fenxiang', text: '分享',     type: 'share' }
 ]
-// 点击操作按钮
-const onClickBtn = (item: (typeof songbtn)[number]) => {
-  if(item.type === 'play') {
-    btnEmits[item.type](detail.list, detail.title)
-  } else {
-    btnEmits[item.type]()
-  }
-}
+
 const tabClick = () => {
 
 }
@@ -91,6 +83,14 @@ async function loadData() {
 }
 loadData()
 
+// 点击操作按钮
+const onClickBtn = (item: (typeof songbtn)[number]) => {
+  if(item.type === 'play') {
+    btnEmits[item.type](detail.list, detail.title)
+  } else {
+    btnEmits[item.type]()
+  }
+}
 const goUser = (userName: string) => {
   const one = info.find(item => item.name === userName)
 

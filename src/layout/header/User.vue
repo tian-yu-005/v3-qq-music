@@ -4,7 +4,7 @@
     <span class="user-name" @click="openModel()">{{ loginStore.info.name }}</span>
 
     <!-- 登录页 -->
-    <Teleport to="body" v-if="loginModel">
+    <Teleport to="body"  v-if="loginModel">
       <Login @close="loginModel = false" />
     </Teleport>
   </div>

@@ -15,11 +15,12 @@
           <keep-alive>
             <component :is="Component" :key="$route.path" v-if="$route.meta.keepAlive" />
           </keep-alive>
+          
           <component :is="Component" :key="$route.path" v-if="!$route.meta.keepAlive" />
         </router-view>
       </div>
       <div class="footer-wrapper" @contextmenu.prevent>
-        <Footer />
+        <Footer ref="footer" />
       </div>
     </div>
   </div>
@@ -29,6 +30,7 @@
 import Aside from '@/layout/aside/Aside.vue'
 import Header from '@/layout/header/Header.vue'
 import Footer from '@/layout/footer/Footer.vue'
+
 </script>
 
 <style scoped lang="scss">

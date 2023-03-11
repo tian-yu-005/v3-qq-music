@@ -5,6 +5,7 @@ import { watchPlayState } from '@/store/player/player'
 const localSongStore = useLocalSongStore()
 // 加载本地和下载
 localSongStore.saveLocalDownload()
+
 watchPlayState()
 
 </script>
